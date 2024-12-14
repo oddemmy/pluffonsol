@@ -3132,7 +3132,8 @@ textarea.w-select {
     pointer-events: none;
     margin-bottom: 10px;
     padding-top: 0;
-    padding-left: 0
+    padding-left: 0;
+    width: 500px;
 }
 
 .div15 {
