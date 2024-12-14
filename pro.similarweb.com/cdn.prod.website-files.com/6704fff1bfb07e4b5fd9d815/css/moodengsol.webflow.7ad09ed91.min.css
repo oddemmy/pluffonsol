@@ -3121,7 +3121,7 @@ textarea.w-select {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 150%;
+    width: 200%;
     padding-top: 40px;
     display: flex;
     position: absolute;
