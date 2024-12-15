@@ -3131,9 +3131,10 @@ textarea.w-select {
 .image-134 {
     pointer-events: none;
     margin-bottom: 10px;
-    padding-top: 0;
+    padding-top: 0; 
+    /* background-color: red; */
     padding-left: 0;
-    width: 1000px;
+    padding-right: 0;
 }
 
 .div15 {
@@ -4059,7 +4060,7 @@ textarea.w-select {
         flex-flow: row
     }
     .image-134 {
-        width: 30%;
+        width: 50%;
         margin-right: 40px
     }
     .topdivs,
@@ -4080,6 +4081,7 @@ textarea.w-select {
         font-size: 10px;
         line-height: 14px
     }
+    
 }
 
 @media screen and (max-width:479px) {
@@ -4262,7 +4264,7 @@ textarea.w-select {
         height: 70px
     }
     .image-134 {
-        width: 35%;
+        width: 50%;
         margin-bottom: 9px;
         position: absolute;
         inset: auto auto 0% 20px
