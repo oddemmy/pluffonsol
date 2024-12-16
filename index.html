@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="div-block-16">
-             <img src="./img/backgroundd.jpg" alt="">
+            <img src="./img/backgroundd.jpg" alt="">
              
                 <img src="https://cdn.prod.website-files.com/6704fff1bfb07e4b5fd9d815/67070f7f88e878564ebbd816_Page%20break%20(2).png" loading="eager" sizes="100vw" srcset="https://cdn.prod.website-files.com/6704fff1bfb07e4b5fd9d815/67070f7f88e878564ebbd816_Page%20break%20(2)-p-500.png 500w, https://cdn.prod.website-files.com/6704fff1bfb07e4b5fd9d815/67070f7f88e878564ebbd816_Page%20break%20(2)-p-800.png 800w, https://cdn.prod.website-files.com/6704fff1bfb07e4b5fd9d815/67070f7f88e878564ebbd816_Page%20break%20(2)-p-1080.png 1080w, https://cdn.prod.website-files.com/6704fff1bfb07e4b5fd9d815/67070f7f88e878564ebbd816_Page%20break%20(2).png 1500w"
                 alt="" class="divider" /></div>
@@ -250,7 +250,18 @@
                 <div id="w-node-_98de5979-f49a-97ed-6d21-be924343ad3c-5fd9d824" class="difftoken">
                     <div id="w-node-d4ec32ff-509c-9c0e-2179-ff1fc5eb9c3c-5fd9d824" class="row">
                         <div id="w-node-_09ff2cdd-fe2c-6629-af39-94c263272602-5fd9d824" class="row1">Total Supply<br/><span class="text-span-4">1 BILLION</span></div>
-                        <div id="w-node-_2d18da7a-de96-bf7e-873b-18011a8b0ee1-5fd9d824" class="row1-copy">Contract address<br/><span class="text-span">Coming soon</span></div>
+                        <div id="w-node-_2d18da7a-de96-bf7e-873b-18011a8b0ee1-5fd9d824" class="row1-copy">
+                            <div>Contract address</div>
+                            
+                            <!-- The content to copy (e.g., the contract address) -->
+                            <span class="text-span" id="contractAddress">5We87tqWQUAWZ9w7pfHDV5fwvgDvWDLzVPzdbkqHmoon</span>
+                            
+                            <!-- Button to copy the content -->
+                            <button onclick="copyCA()">Copy CA</button>
+                            
+                            <!-- Message to show success or failure -->
+                            <p id="message"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -431,3 +442,19 @@
 </body>
 
 </html>
+<script>
+    // Function to copy the contract address to the clipboard
+    function copyCA() {
+      // Get the text content of the contract address
+      var contractAddress = document.getElementById("contractAddress").textContent;
+  
+      // Use the Clipboard API to copy the content
+      navigator.clipboard.writeText(contractAddress).then(function() {
+        // Display success message
+        document.getElementById("message").textContent = "Contract address copied to clipboard!";
+      }).catch(function(err) {
+        // Display failure message
+        document.getElementById("message").textContent = "Failed to copy contract address.";
+      });
+    }
+  </script>
